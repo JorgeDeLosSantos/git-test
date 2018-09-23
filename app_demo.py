@@ -15,6 +15,7 @@ class MiAplicacion(wx.Frame):
         self.SetSizer(self.sz)
         self.Centre(True)
         self.Show()
+        # This line was added by lab2dls user
 
 if __name__=='__main__':
     version = "0.1.1"
