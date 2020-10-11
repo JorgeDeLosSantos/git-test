@@ -11,6 +11,10 @@ class MiAplicacion(wx.Frame):
     def __init__(self,parent,title):
         wx.Frame.__init__(self,parent,title=title,size=(250,200))
         self.sz = wx.BoxSizer(wx.VERTICAL)
+
+        bt = wx.Button(self,-1,"Hola")
+        self.sz.Add(bt, 1, wx.EXPAND)
+
         self.SetBackgroundColour("#ff7700")
         self.SetSizer(self.sz)
         self.Centre(True)
