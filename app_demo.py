@@ -12,6 +12,10 @@ class MiAplicacion(wx.Frame):
         wx.Frame.__init__(self,parent,title=title,size=(250,200))
         self.sz = wx.BoxSizer(wx.VERTICAL)
         self.SetBackgroundColour("#ff7700")
+
+        txt = wx.TextCtrl(self, -1, "")
+        self.sz.Add(txt, 1, wx.EXPAND)
+
         self.SetSizer(self.sz)
         self.Centre(True)
         self.Show()
