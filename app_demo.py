@@ -13,7 +13,9 @@ class MiAplicacion(wx.Frame):
         self.sz = wx.BoxSizer(wx.VERTICAL)
 
         bt = wx.Button(self,-1,"Hola")
+        txt02 = wx.TextCtrl(self,-1,"")
         self.sz.Add(bt, 1, wx.EXPAND)
+        self.sz.Add(txt02, 1, wx.EXPAND)
 
         self.SetBackgroundColour("#ff7700")
         self.SetSizer(self.sz)
